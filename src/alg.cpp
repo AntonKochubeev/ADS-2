@@ -39,6 +39,7 @@ double sinn(double x, uint16_t count) {
   }
   return sum;
 }
+
 double cosn(double x, uint16_t count) {
   double sum = 0;
   for (uint32_t i = 1; i <= count; i++) {
@@ -46,7 +47,7 @@ double cosn(double x, uint16_t count) {
     if ((i - 1) % 2 != 0) {
       sign = -1;
     }
-    sum += sign * calcItem(x, 2 * i - 2);
+    sum += sign * calcItem(x, 2 * i);
   }
   return sum;
 }
