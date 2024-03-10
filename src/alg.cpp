@@ -4,7 +4,19 @@
 
 
 double pown(double value, uint16_t n) {
-    return pow(value, n);
+   double v = value;
+  if (n == 1) {
+    return value;
+  }
+  if (n == 0) {
+    return 1;
+  }
+  for (uint32_t i = 2;; i++) {
+    value *= v;
+    if (n == i) {
+      return value;
+    }
+  }
 }
 
 uint64_t fact(uint16_t n) {
