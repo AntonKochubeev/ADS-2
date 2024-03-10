@@ -1,6 +1,5 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
-#include <cmath>
 #include "alg.h"
 
 
@@ -47,7 +46,7 @@ double cosn(double x, uint16_t count) {
     if ((i - 1) % 2 != 0) {
       sign = -1;
     }
-    sum += sign * calcItem(x, 2 * i);
+    sum += sign * calcItem(x, 2 * i - 2);
   }
   return sum;
 }
