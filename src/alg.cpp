@@ -29,13 +29,13 @@ double expn(double x, uint16_t count) {
 }
 
 double sinn(double x, uint16_t count) {
-    double sum = 0;
+   double sum = 0;
     for (uint32_t i = 0; i <= count; i++) {
          double a = 1;
         if ((i - 1) % 2 != 0) {
-            a = -1;
+             a = -1;
         }
-      sum += a * calcItem(x, 2 * i - 1);
+      sum += a * calcItem(x, 2 * i - 1);   
     }
     return sum;
 }
