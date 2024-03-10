@@ -1,6 +1,5 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
-#include <cmath>
 #include "alg.h"
 
 
@@ -28,7 +27,7 @@ double expn(double x, uint16_t count) {
     return sum;
 }
 
-double sinn(double x, uint16_t count) {
+double sinn(double x, uint16_t count) {mm
     double sum = 0.0;
     for (uint16_t i = 0; i < count; ++i) {
         sum += (i % 2 == 0 ? 1 : -1) * calcItem(x, 2 * i + 1);
