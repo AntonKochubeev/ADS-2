@@ -4,7 +4,7 @@
 
 
 double pown(double value, uint16_t n) {
-    return std::pow(value, n);
+    return pow(value, n);
 }
 
 uint64_t fact(uint16_t n) {
